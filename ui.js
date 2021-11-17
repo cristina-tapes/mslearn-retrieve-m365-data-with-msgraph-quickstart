@@ -21,7 +21,7 @@ async function uploadFile(file) {
 
 function fileSelected(e) {
   displayUploadMessage(`Uploading ${e.files[0].name}...`);
-  uploadFile(e.files[0]).then((response) => {
+  uploadFile(e.files[0]).then(({ responseBody: response }) => {
     displayUploadMessage(
       `File ${response.name} of ${response.size} bytes uploaded`
     );
