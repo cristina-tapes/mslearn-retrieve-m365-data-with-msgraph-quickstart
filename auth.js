@@ -2,7 +2,7 @@
 const msalConfig = {
   auth: {
     clientId: "4c0885d0-e509-4d26-8931-a6d4dd348458",
-    clientSecret: "LUX7Q~mQzlv3Eo_d953_rp5uf0deLRC2xGDj5",
+    clientSecret: "your_secret_here",
     authority: "https://login.microsoftonline.com/common",
     redirectUri: `${window.location.origin}`,
   },
